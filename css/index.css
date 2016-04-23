@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:danger;
+}
+header{
+	position:relative;
+	top:0;
+	left:0;
+	/*overflow:hidden;*/	
+}
+#burger{	
+	position:absolute;
+	bottom:3px;
+	right:3px;
+	width:35px;
+	height:25px;
+	/*background-color:orange;*/
+	/*overflow:hidden;*/
+	cursor:pointer;
+}
+#burger span{
+	position:absolute;
+	width:100%;
+	height:5px;
+	background-color:black;
+	transition:all 0.4s;
+	z-index:5;
+}
+#burger span:nth-child(1){
+	top:0;
+	left:0;
+}
+#burger span:nth-child(2){
+	top:50%;
+	left:0;
+}
+#burger span:nth-child(3){	
+	top:100%;
+	left:0;
+}
+h1{
+	/*border:1px solid black;*/
+	overflow:hidden;
+	font-size:0;
+}
+h1 span{
+	display:none;
+}
+h1 img{
+	width:220%;	
+}
+nav{    /* eeeelllllllllllllllllllll   nav mmmmmmm*/
+	position:fixed;
+	top:68px;	
+	right:-109%;
+	width:100%;	
+	/*border:2px solid orange;*/
+	transition:all 0.4s;	
+	
+}
+#menu{	
+	background-color:white;
+	text-align:center;
+	padding:5px 0px;
+	
+}
+#menu li{	
+	/*border:1px solid black;*/
+	margin:10px 0px;	
+	list-style:none;
+	/*background-color:olive;*/
+}
+#menu li a{
+	text-decoration:none;
+	font-size:17px;
+	color:black;
+	background-color:white;
+	display:block;
+	padding:5px 0px;
+	}
+#menu li a:hover{
+	color:white;
+	background-color:blue;
+}
+#menu li .actual{
+	color:white;
+	background-color:blue;
+}
+#burger:hover nav{	
+	transform:translateX(-109%);	
+	}
+	
+#burger:hover span:nth-child(1){
+	top:50%;
+	transform:rotate(45deg);	
+}
+#burger:hover span:nth-child(2){
+	opacity:0;	
+}
+#burger:hover span:nth-child(3){
+	top:50%;
+	transform:rotate(-45deg);	
+}
+h2{	
+    width:90%;
+	margin:10px auto;
+	/*border:1px solid red;*/
+	text-align:center;
+	color:blue;
+}
+#imagen1{
+	display:block;
+	width:95%;
+	margin:20px auto;
+}
+#imagen1 img{
+	display:block;
+	width:100%;
+}
+#imagen2{
+	display:none;
+}
+#sectionPrincipal{	
+	margin-top:10px;
+	margin-bottom:30px;
+}
+section h3{
+	text-align:center;
+	margin:10px 0px;
+	color:blue;
+}
+#sectionPrincipal p{	
+	width:90%;
+	margin:5px auto;
+}
+footer{
+	position:relative;
+	height:52px;
+	background-color:#1C1D20;
+}
+aside{
+	height:70px;
+	background-color:#3C3F46;
+	text-align:center;	
+}
+aside a{
+	line-height:70px;
+	color:blue;
+	
+}
+aside a:hover{
+	text-decoration:none;
+}
+footer img{
+	position:absolute;
+	right:5px;
+	bottom:2px;
+	width:50px;
+	height:50px;
+	cursor:pointer;
+}
+footer span{
+	line-height:50px;
+	margin-left:7%;
+}
+
+#sect2 img{
+	
+	display:block;
+	margin:10px auto;
+}
+#sect2 p{	
+	width:90%;
+	margin:5px auto;
+}
+#sect2 span{
+	font-weight:bold;	
+}
+#sect2 a{
+	display:block;
+	width:170px;
+	height:auto;	
+	margin:5px 0px 10px 50%;
+	transform:translateX(-50%);	
+}
+#sect2 a:hover{
+	text-decoration:none;
+}
+#sectionPrincipal p{
+	text-indent:35px;
+	text-align:justify;
+}
+@media screen and (min-width:320px) {
+	/* es para controlar el nav */
+body{
+	/*background-color:red;*/
+}
+nav{    /* eeeelllllllllllllllllllll  1   nav mmmmmmm*/
+	
+	top:74px;	
+		
+}
+}
+@media screen and (min-width:365px) {
+	
+	/* es para controlar el nav */
+body{
+	
+	/*background-color:olive;*/
+}
+nav{    /* eeeelllllllllllllllllllll  2   nav mmmmmmm*/
+	
+	top:84px;	
+		
+}
+}
+@media screen and (min-width:405px) {
+	/* es para controlar el nav */
+body{
+	/*background-color:pink;*/
+}
+nav{    /* eeeelllllllllllllllllllll  3   nav mmmmmmm*/
+	
+	top:94px;	
+		
+}
+}
+@media screen and (min-width:445px) {
+	/* es para controlar el nav */
+body{
+	/*background-color:yellow;*/
+}
+nav{    /* eeeelllllllllllllllllllll  4   nav mmmmmmm*/
+	
+	top:102px;	
+		
+}
+}
+
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX      MODO TABLET    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+@media screen and (min-width:500px) {
+	
+body{
+	/*background-color:aqua;*/
+}
+#burger span{
+	display:none;
+}
+h1 img{
+	width:100%;
+
+}  
+header{
+	margin-bottom:90px;
+}
+  /* eeeelllllllllllllllllllll   nav mmmmmmm right:-109%;*/
+
+nav{  
+	position:absolute;
+	top:120%;	
+	/*right:100%;	*/
+	width:100%;	
+	right:0%;	
+	/*border:1px solid olive;*/
+	/*background-color:white;*/
+}
+#burger{
+/*	border:1px solid red;*/
+	width:100%;	
+	
+}
+
+#menu{	
+    position:static;	
+	width:100%;
+	margin:0px auto;
+	background-color:lightgray;
+	text-align:center;
+	padding:0px 0px;
+	font-size:0px;
+	/*border:1px solid black;*/
+}
+#menu li{	
+	/*border:1px solid black;*/
+	/*margin:0px 0px;	*/
+	margin-right:3px;
+	list-style:none;	
+	/*border-left:1px solid black;*/
+	display:inline-block;
+}
+#menu li:last-child{
+	margin-right:0px;
+}
+#menu li a{
+	display:block;
+	background-color:white;
+	font-size:15px;
+	/*border:1px solid orange;*/
+	padding:0px 2px;
+}
+#cambio{
+	margin-top:50px;
+}
+#burger:hover nav{	
+	transform:translateX(0px);	
+	}
+#menu li:first-child a{
+	border-radius:10px 0px 0px 10px;
+}
+#menu li:last-child a{
+	border-radius:0px 10px 10px 0px;
+}	
+
+}
+
+@media screen and (min-width:600px) {
+	
+#menu li a{	
+	font-size:18px;
+}
+#sectionPrincipal section{
+	width:49%;
+	display:inline-block;
+}
+	
+}
+@media screen and (min-width:700px) {
+	
+	#menu li a{
+	font-size:21px;
+}
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     MODO ESCRITORIO  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+@media screen and (min-width:800px) {
+body{
+	/*background-color:yellow;*/
+}
+/*#sectionPrincipal {
+	background-color:yellow;
+}*/
+#imagen2{
+	display:block;
+	
+	max-width:1000px;
+	margin:30px auto 50px;
+}
+#imagen2 img{
+	display:block;
+	width:100%;
+}
+#sectionPrincipal {
+	
+	text-align:center;
+}
+#sectionPrincipal section{
+	width:19%;
+	display:inline-block;
+	vertical-align:top;
+	text-align:justify;
+}
+#sectionPrincipal section p{
+    text-indent:0px;
+	text-align:left;
+}
+#sectionPrincipal section h3{
+	text-align:left;
+	font-size:23px;
+	padding:0px 6px;
+	max-width:150px;
+	
+}
+#sectionPrincipal section:hover{
+	background-color:#E6E6E6;
+}
+header{	
+	max-width:1050px;
+	margin:0px auto 140px;
+}
+#menu {
+	background-color:lightgray;	
+}
+#menu li{
+	vertical-align:top;
+	width:14%;		
+	margin-right:1px;	
+}
+#menu li a{	
+	font-size:18px;
+	padding:18px 5px 8px;
+	height:50px;	
+}
+
+#imagen1{
+	max-width:1050px;
+/*	border:2px solid black;*/
+}
+#sectionPrincipal{
+	max-width:1050px;
+	margin:10px auto 30px;
+}
+#menu li:first-child a{
+	border-radius:25px 0px 0px 25px;
+}
+#menu li:last-child a{
+	border-radius:0px 25px 25px 0px;
+}	
+
+}
+@media screen and (min-width:870px) {
+	#menu li a{	
+	font-size:20px;
+	}
+	
+	
+}
+@media screen and (min-width:950px) {
+	#menu li a{	
+	font-size:22px;
+	}
+	
+	
+}
